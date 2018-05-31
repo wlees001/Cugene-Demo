@@ -1713,7 +1713,7 @@
 		a:hover {
 			text-decoration: none;
 			border-bottom-color: transparent;
-			color: #23b1ec !important;
+			color: #3c72ab !important;
 		}
 
 			a:hover strong {
@@ -2039,8 +2039,8 @@
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 3px #23b1ec;
-		color: #23b1ec !important;
+		box-shadow: inset 0 0 0 3px #3c72ab;
+		color: #3c72ab !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2064,7 +2064,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #23b1ec;
+			background-color: #3c72ab;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2268,8 +2268,8 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #23b1ec;
-			box-shadow: inset 0 0 0 1px #23b1ec;
+			border-color: #3c72ab;
+			box-shadow: inset 0 0 0 1px #3c72ab;
 		}
 
 	.select-wrapper:before {
@@ -2288,15 +2288,15 @@
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #23b1ec;
-		border-color: #23b1ec;
+		background-color: #3c72ab;
+		border-color: #3c72ab;
 		color: #ffffff;
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #23b1ec;
-		box-shadow: 0 0 0 1px #23b1ec;
+		border-color: #3c72ab;
+		box-shadow: 0 0 0 1px #3c72ab;
 	}
 
 	::-webkit-input-placeholder {
@@ -2356,8 +2356,8 @@
 			}
 
 	.icon.major:before {
-		box-shadow: inset 0 0 0 3px #23b1ec;
-		color: #23b1ec;
+		box-shadow: inset 0 0 0 3px #3c72ab;
+		color: #3c72ab;
 	}
 
 /* Image */
@@ -3236,7 +3236,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 3.25rem;
+		height: 7.25rem;
 		line-height: 3.25rem;
 		background-color: #ffffff;
 		box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.125);
@@ -3306,7 +3306,7 @@
 						left: 0;
 						width: 100%;
 						height: 3px;
-						background-color: #23b1ec;
+						background-color: #3c72ab;
 					}
 
 					#header > nav > ul > li.current > a {
@@ -3314,7 +3314,7 @@
 					}
 
 					#header > nav > ul > li.active > a {
-						color: #23b1ec;
+						color: #3c72ab;
 					}
 
 			.dropotron {
@@ -3358,7 +3358,7 @@
 					}
 
 					.dropotron li.active > a {
-						color: #23b1ec;
+						color: #3c72ab;
 					}
 
 				.dropotron a {
@@ -3369,7 +3369,7 @@
 				}
 
 					.dropotron a:active, .dropotron a:hover, .dropotron a:focus {
-						color: #23b1ec;
+						color: #3c72ab;
 					}
 
 		#header.reveal {
@@ -3385,7 +3385,7 @@
 			-ms-animation: none;
 			animation: none;
 			box-shadow: none;
-			background-color: transparent;
+			background-color: white;
 			position: absolute;
 		}
 
@@ -3400,7 +3400,7 @@
 			}
 
 			#header.alt > .navPanelToggle {
-				top: 1rem;
+				top: 2.4rem;
 				right: 1rem;
 			}
 
@@ -3431,7 +3431,7 @@
 
 			#header > .navPanelToggle:before {
 				content: '\f0c9';
-				margin: 0 0 0 0.625rem;
+				margin: 0 0 0 0.725rem;
 				float: right;
 			}
 
@@ -3648,7 +3648,7 @@
 
 	.inner {
 		margin: 0 auto;
-		width: 68rem;
+		width: 50%;
 		max-width: calc(100% - 6rem);
 	}
 
@@ -3747,7 +3747,7 @@
 				}
 
 				#wrapper > .main > header.accent1 a {
-					color: #23b1ec;
+					color: #3c72ab;
 				}
 
 				#wrapper > .main > header.accent1 strong, #wrapper > .main > header.accent1 b {
@@ -3808,7 +3808,7 @@
 					#wrapper > .main > header.accent1 .button.special {
 						background-color: #ffffff;
 						box-shadow: none;
-						color: #23b1ec !important;
+						color: #3c72ab !important;
 					}
 
 						#wrapper > .main > header.accent1 input[type="submit"].special:hover,
@@ -3866,7 +3866,7 @@
 				#wrapper > .main > header.accent1 input[type="radio"]:checked + label:before {
 					background-color: #ffffff;
 					border-color: #ffffff;
-					color: #23b1ec;
+					color: #3c72ab;
 				}
 
 				#wrapper > .main > header.accent1 input[type="checkbox"]:focus + label:before,
@@ -3933,11 +3933,11 @@
 				}
 
 				#wrapper > .main > header.accent1 + .tabs > .titles {
-					background-color: #23b1ec;
+					background-color: #3c72ab;
 				}
 
 					#wrapper > .main > header.accent1 + .tabs > .titles:before {
-						background-color: #23b1ec;
+						background-color: #3c72ab;
 					}
 
 					#wrapper > .main > header.accent1 + .tabs > .titles > .title {
@@ -3945,7 +3945,7 @@
 					}
 
 						#wrapper > .main > header.accent1 + .tabs > .titles > .title.active {
-							color: #23b1ec;
+							color: #3c72ab;
 							background-color: #ffffff;
 							box-shadow: none;
 						}
@@ -3960,7 +3960,7 @@
 				}
 
 				#wrapper > .main > header.accent2 a {
-					color: #23b1ec;
+					color: #3c72ab;
 				}
 
 				#wrapper > .main > header.accent2 strong, #wrapper > .main > header.accent2 b {
@@ -4179,7 +4179,7 @@
 				}
 
 			#wrapper > .main > .inner.alt {
-				padding: 3rem 0 !important;
+				padding: 0rem 0 !important;
 			}
 
 		#wrapper > .main > .tabs {
@@ -4241,7 +4241,7 @@
 				}
 
 					#wrapper > .main > .tabs > .titles > .title.active {
-						box-shadow: 0 3px 0 0 #23b1ec;
+						box-shadow: 0 3px 0 0 #3c72ab;
 						-moz-animation: tab-title 0.5s ease forwards;
 						-webkit-animation: tab-title 0.5s ease forwards;
 						-ms-animation: tab-title 0.5s ease forwards;
@@ -4262,7 +4262,7 @@
 				}
 
 		#wrapper > .main.accent1 {
-			background-color: #23b1ec;
+			background-color: #3c72ab;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
@@ -4271,7 +4271,7 @@
 			}
 
 			#wrapper > .main.accent1 a {
-				color: #23b1ec;
+				color: #3c72ab;
 			}
 
 			#wrapper > .main.accent1 strong, #wrapper > .main.accent1 b {
@@ -4332,7 +4332,7 @@
 				#wrapper > .main.accent1 .button.special {
 					background-color: #ffffff;
 					box-shadow: none;
-					color: #23b1ec !important;
+					color: #3c72ab !important;
 				}
 
 					#wrapper > .main.accent1 input[type="submit"].special:hover,
@@ -4390,7 +4390,7 @@
 			#wrapper > .main.accent1 input[type="radio"]:checked + label:before {
 				background-color: #ffffff;
 				border-color: #ffffff;
-				color: #23b1ec;
+				color: #3c72ab;
 			}
 
 			#wrapper > .main.accent1 input[type="checkbox"]:focus + label:before,
@@ -4466,7 +4466,7 @@
 			}
 
 			#wrapper > .main.accent2 a {
-				color: #23b1ec;
+				color: #3c72ab;
 			}
 
 			#wrapper > .main.accent2 strong, #wrapper > .main.accent2 b {
@@ -5042,7 +5042,7 @@
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: #23b1ec;
+		background: #3c72ab;
 		box-shadow: none;
 		color: rgba(255, 255, 255, 0.75);
 		height: 100%;
