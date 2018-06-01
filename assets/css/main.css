@@ -3237,7 +3237,7 @@
 		left: 0;
 		width: 100%;
 		height: 7.25rem;
-		line-height: 3.25rem;
+		line-height: 7.25rem;
 		background-color: #ffffff;
 		box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.125);
 		cursor: default;
@@ -3450,12 +3450,12 @@
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 44px;
-				line-height: 44px;
+				height: 90px;
+				line-height: 90px;
 			}
 
 				#header > .logo {
-					left: 1rem;
+					left: 8rem;
 				}
 
 					#header > .logo .extra {
