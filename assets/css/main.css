@@ -522,6 +522,20 @@
 			margin-left: 8.33333%;
 		}
 
+		/*Contact US page*/
+		.contact-section{
+			margin:15px;
+		}
+		.contact-us {
+		   width: 50%;
+		   float: left;
+		}
+
+		.location {
+		  width: 50%;
+		  float: left;
+		}
+
 	}
 
 	@media screen and (max-width: 1280px) {
@@ -735,6 +749,20 @@
 
 		.\-1u\28large\29 {
 			margin-left: 8.33333%;
+		}
+
+		/*Contact US page*/
+		.contact-section{
+			margin:15px;
+		}
+		.contact-us {
+		   width: 50%;
+		   float: left;
+		}
+
+		.location {
+		  width: 50%;
+		  float: left;
 		}
 
 	}
@@ -952,6 +980,20 @@
 			margin-left: 8.33333%;
 		}
 
+		/*Contact US page*/
+		.contact-section{
+			margin:15px;
+		}
+		.contact-us {
+		   width: 50%;
+		   float: left;
+		}
+
+		.location {
+		  width: 50%;
+		  float: left;
+		}
+
 	}
 
 	@media screen and (max-width: 736px) {
@@ -1165,6 +1207,20 @@
 
 		.\-1u\28small\29 {
 			margin-left: 8.33333%;
+		}
+
+		/*Contact US page*/
+		.contact-section{
+			margin:15px;
+		}
+		.contact-us {
+		   width: 100%;
+		   float: left;
+		}
+
+		.location {
+		  width: 100%;
+		  float: left;
 		}
 
 	}
@@ -1381,6 +1437,19 @@
 		.\-1u\28xsmall\29 {
 			margin-left: 8.33333%;
 		}
+		/*Contact US page*/
+		.contact-section{
+			margin:15px;
+		}
+		.contact-us {
+		   width: 100%;
+		   float: left;
+		}
+
+		.location {
+		  width: 100%;
+		  float: left;
+		}
 
 	}
 
@@ -1595,6 +1664,19 @@
 
 		.\-1u\28xxsmall\29 {
 			margin-left: 8.33333%;
+		}
+		/*Contact US page*/
+		.contact-section{
+			margin:15px;
+		}
+		.contact-us {
+		   width: 100%;
+		   float: left;
+		}
+
+		.location {
+		  width: 100%;
+		  float: left;
 		}
 
 	}
