@@ -3321,7 +3321,7 @@
 		height: 7.25rem;
 		line-height: 7.25rem;
 		background-color: #ffffff;
-		box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.125);
+		box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		z-index: 10000;
 	}
@@ -4968,6 +4968,7 @@
 	#footer {
 		padding: 6rem 0 4rem 0 ;
 		background-color: #ffffff;
+		box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.25);
 	}
 
 		#footer > .inner {
