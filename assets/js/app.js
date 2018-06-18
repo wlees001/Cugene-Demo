@@ -14,10 +14,10 @@ particlesJS.load('particles-js', 'particles.json', function() {
 particlesJS("particles-js", {
   particles: {
     number: { value: 160, density: { enable: true, value_area: 800 } },
-    color: { value: "random" },
+    color: { value: "#fff" },
     shape: {
-      type: "triangle",
-      stroke: { width: 0, color: "random" },
+      type: "circle",
+      stroke: { width: 0, color: "#000000" },
       polygon: { nb_sides: 5 },
       image: { src: "img/github.svg", width: 100, height: 100 }
     },
