@@ -2179,7 +2179,10 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #498dd4;
+				border: 2px solid;
+				box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+				outline-color: rgba(255, 255, 255, 0);
+				outline-offset: 15px;
 			}
 
 			input[type="submit"].special:active,
