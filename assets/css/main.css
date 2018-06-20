@@ -1986,7 +1986,10 @@
 	}
 
 	strong, b {
-		color: #3b3b3b;
+		/* color: #fe7246; */
+		color:#fff;
+		text-shadow: 2px 2px 6px #414141;
+
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2158,9 +2161,9 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #3c72ab;
+			background-color: #ffffff;
 			box-shadow: none;
-			color: #ffffff !important;
+			color: #3c72ab !important;
 		}
 
 			input[type="submit"].special:hover,
