@@ -1987,8 +1987,13 @@
 
 	strong, b {
 		color: #3b3b3b;
-	}
 
+	}
+	
+	#customtitle{
+		color: white !important;
+		text-shadow: 2px 2px 6px #414141
+	}
 	h1, h2, h3, h4, h5, h6 {
 		color: #3b3b3b;
 	}
@@ -2166,9 +2171,9 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #3c72ab;
+			background-color: #ffffff;
 			box-shadow: none;
-			color: #ffffff !important;
+			color: #3c72ab !important;
 		}
 
 			input[type="submit"].special:hover,
@@ -2176,7 +2181,10 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #498dd4;
+				border: 2px solid;
+				box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+				outline-color: rgba(255, 255, 255, 0);
+				outline-offset: 15px;
 			}
 
 			input[type="submit"].special:active,
