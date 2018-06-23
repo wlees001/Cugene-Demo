@@ -28,59 +28,36 @@ app.get('/contact', function (req, res) {
 });
 
 // POST route from contact form
-// app.post('./contact', function (req, res) {
-//     let milOpts, smtpTrans;
-//     smtpTrans = nodemailer.createTransport({
-//       host: 'smtp.gmail.com',
-//       port: 8080,
-//       secure: true,
-//       auth: {
-//         user: 'leelandclenista@gmail.com',
-//         pass: 'Thronehodor23!'
-//       }
-//     });
-//     mailOpts = {
-//       from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-//       to: 'leelandclenista@gmail.com',
-//       subject: 'New message from contact form at Cugene.com',
-//       text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
-//     };
-//     smtpTrans.sendMail(mailOpts, function (error, response) {
-//       if (error) {
-//         res.render('contact-failure');
-//         console.log('error')
-//       }
-//       else {
-//         res.render('contact-success');
-//         console.log('sent')
-//       }
-//     });
-//   });
-
-app.post('./api/contact', function (req, res, next) {
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'leelandclenista@gmail.com',
-      pass: 'Thronehodor23!'
-    }
-  })
-
-  const mailOptions = {
-    from: `${req.body.email}`,
-    to: 'leelandclenista@gmail.com',
-    subject: `${req.body.name}`,
-    text: `${req.body.message}`,
-    replyTo: `${req.body.email}`
-  }
-  transporter.sendMail(mailOptions, function (err, res) {
-    if (err) {
-      console.error('there was an error: ', err);
-    } else {
-      console.log('here is the res: ', res)
-    }
-  })
-})
+app.post('/send', function (req, res) {
+    let milOpts, smtpTrans;
+    smtpTrans = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      //service: 'yahoo mail',
+      //port: 465,
+      service:'gmail',
+      secure: true,
+      auth: {
+        user: 'leelandclenista@gmail.com',
+        pass: 'Thronehodor23!'
+      }
+    });
+    mailOpts = {
+      from: req.body.name + ' &lt;' + req.body.email + '&gt;',
+      to: 'leelandclenista@gmail.com',
+      subject: 'New message from contact form at Cugene.com',
+      text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+    };
+    smtpTrans.sendMail(mailOpts, function (error, response) {
+      if (error) {
+        res.json('contact-failure');
+        console.log(error)
+      }
+      else {
+        res.json('contact-success');
+        console.log('sent')
+      }
+    });
+  });
 
 
 
