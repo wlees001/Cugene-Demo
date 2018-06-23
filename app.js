@@ -53,8 +53,11 @@ app.post('/send', function (req, res) {
         console.log(error)
       }
       else {
-        res.json('contact-success');
+        // res.json('contact-success');
+        res.redirect('/contact')
         console.log('sent')
+        // let success = "Mail has been sent!";
+        // $('.contact-us').append(success);
       }
     });
   });
