@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 var path = require("path");
+require('dotenv').config()
 
 const nodemailer = require('nodemailer');
 
@@ -31,21 +32,21 @@ app.get('/contact', function (req, res) {
 app.post('/send', function (req, res) {
     let milOpts, smtpTrans;
     smtpTrans = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
+      host: process.env.EMAIL_HOST,
       //service: 'yahoo mail',
       //port: 465,
       service:'gmail',
       secure: true,
       auth: {
-        user: 'leelandclenista@gmail.com',
-        pass: 'Thronehodor23!'
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASS
       }
     });
     mailOpts = {
       from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-      to: 'leelandclenista@gmail.com',
+      to: process.env.EMAIL,
       subject: 'New message from contact form at Cugene.com',
-      text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+      text: `${req.body.message} from ${req.body.name}`
     };
     smtpTrans.sendMail(mailOpts, function (error, response) {
       if (error) {
