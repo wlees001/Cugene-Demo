@@ -46,7 +46,7 @@ app.post('/send', function (req, res) {
       from: req.body.name + ' &lt;' + req.body.email + '&gt;',
       to: process.env.EMAIL,
       subject: 'New message from contact form at Cugene.com',
-      text: `${req.body.message} from ${req.body.name}`
+      text: `${req.body.message} from ${req.body}`
     };
     smtpTrans.sendMail(mailOpts, function (error, response) {
       if (error) {
