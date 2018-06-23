@@ -26,11 +26,13 @@ app.get('/',function(req,res){
   });
 
 // POST route from contact form
-app.post('./contact', function (req, res) {
+app.post('/send', function (req, res) {
     let milOpts, smtpTrans;
     smtpTrans = nodemailer.createTransport({
       host: 'smtp.gmail.com',
-      port: 8080,
+      //service: 'yahoo mail',
+      //port: 465,
+      service:'gmail',
       secure: true,
       auth: {
         user: 'leelandclenista@gmail.com',
@@ -45,11 +47,11 @@ app.post('./contact', function (req, res) {
     };
     smtpTrans.sendMail(mailOpts, function (error, response) {
       if (error) {
-        res.render('contact-failure');
-        console.log('error')
+        res.json('contact-failure');
+        console.log(error)
       }
       else {
-        res.render('contact-success');
+        res.json('contact-success');
         console.log('sent')
       }
     });
