@@ -42,6 +42,18 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+	/* Particles */
+	#particles-js{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color:transparent;
+		background-image: url('');
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+	  }
+	
 
 /* Box Model */
 
@@ -1975,8 +1987,13 @@
 
 	strong, b {
 		color: #3b3b3b;
-	}
 
+	}
+	
+	#customtitle{
+		color: white !important;
+		text-shadow: 2px 2px 6px #414141
+	}
 	h1, h2, h3, h4, h5, h6 {
 		color: #3b3b3b;
 	}
@@ -2089,6 +2106,7 @@
 			line-height: 3.4375rem;
 			border-radius: 3.4375rem;
 			padding: 0 2rem;
+			margin-bottom: 29px;
 		}
 
 		input[type="submit"].wide,
@@ -2125,12 +2143,19 @@
 		color: #3c72ab !important;
 	}
 
+
+	.home-button:hover {
+		box-shadow: inset 0 0 0 3px #ffffff;
+		color: #ffffff !important;
+	}
+
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
 			background-color: rgba(60, 114, 171, 0.1);
+			box-shadow: inset 0 0 0 3px #ffffff;
 		}
 
 			input[type="submit"]:hover:active,
@@ -2146,9 +2171,9 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #3c72ab;
+			background-color: #ffffff;
 			box-shadow: none;
-			color: #ffffff !important;
+			color: #3c72ab !important;
 		}
 
 			input[type="submit"].special:hover,
@@ -2156,7 +2181,10 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #498dd4;
+				border: 2px solid;
+				box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+				outline-color: rgba(255, 255, 255, 0);
+				outline-offset: 15px;
 			}
 
 			input[type="submit"].special:active,
@@ -2703,7 +2731,7 @@
 	}
 
 	header h1 + p {
-		font-size: 1.5rem;
+		font-size: 1.45rem;
 		margin: -2rem 0 4rem 0;
 	}
 
@@ -3318,8 +3346,8 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 11.25rem;
-		line-height: 11.25rem;
+		height: 7.25rem;
+		line-height: 7.25rem;
 		background-color: #ffffff;
 		box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
@@ -3601,7 +3629,7 @@
 			width: 100%;
 			height: 100%;
 			background-color: #f7f7f7;
-			opacity: 0.5;
+			opacity: 0.1;
 		}
 
 		#banner video {
