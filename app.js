@@ -32,11 +32,11 @@ app.get('/contact', function (req, res) {
 app.post('/send', function (req, res) {
     let milOpts, smtpTrans;
     smtpTrans = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
+      // host: process.env.EMAIL_HOST,
       //service: 'yahoo mail',
       //port: 465,
-      service:'gmail',
-      secure: true,
+      service:'Godaddy',
+      secure: false,
       auth: {
         user: process.env.EMAIL,
         pass: process.env.EMAIL_PASS
