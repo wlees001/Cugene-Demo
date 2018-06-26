@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 var path = require("path");
 require('dotenv').config()
+var port = process.env.PORT || 8080;
 
 const nodemailer = require('nodemailer');
 
@@ -28,11 +29,19 @@ app.get('/contact', function (req, res) {
   res.sendFile(path.join(__dirname + '/contact.html'));
 });
 
+app.get('/tos', function (req, res) {
+  res.sendFile(path.join(__dirname + '/tos.html'));
+});
+
+app.get('/privacy', function (req, res) {
+  res.sendFile(path.join(__dirname + '/privacy.html'));
+});
+
 // POST route from contact form
 app.post('/send', function (req, res) {
     let milOpts, smtpTrans;
     smtpTrans = nodemailer.createTransport({
-      // host: process.env.EMAIL_HOST,
+      host: process.env.EMAIL_HOST,
       //service: 'yahoo mail',
       //port: 465,
       service:'Godaddy',
@@ -67,6 +76,5 @@ app.post('/send', function (req, res) {
 
 
 app.use(express.static(__dirname + '/public')); //__dir and not _dir
-var port = 8000; // you can use any port
 app.listen(port);
-console.log('server on' + port);
+console.log(`server on ${port}`);
