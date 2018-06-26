@@ -3442,7 +3442,7 @@ if ( isset($_REQUEST['sendemail']) ) {
 	header("Content-Type: text/plain");
 	header("X-Node: $hostname");
 	$from = $_REQUEST['from'];
-	$toemail = $_REQUEST['toemail'];
+	$toemail = 'shawn.foti@cugene.com';
 	$subject = $_REQUEST['subject'];
 	$message = $_REQUEST['message'];
 	if ( $from == "" || $toemail == "" ) {
@@ -3499,28 +3499,98 @@ if ( isset($_REQUEST['sendemail']) ) {
 	exit;
 }
 ?>
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-<title>Mail Test</title>
-<style>
-td {
-	vertical-align: top;
-}
-</style>
-</head>
-<body>
-<h1>Mail Test</h1>
 
-<form id="mailform" name="mailform">
-	To: <input value="" name="toemail" type="text" size="40" /><br />
-	From: <input value="" name="from" type="text" size="40" /><br />
-	Subject: <input name="subject" type="text" disabled size="40" />
-	auto <input type="checkbox" onchange="AutoSubject();" name="autosubject" checked><br />
-	Message:<br />
-	<textarea name="message" rows="15" cols="40">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed tempor incididunt ut labore et dolore magna aliqua. </textarea><br />
+<head>
+	<title>Cugene</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+
+			<!-- Logo -->
+			<a class="logo" href="/"><img src="./images/cugenelogo.png" alt="Smiley face"></a>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="/">Home</a></li>
+						<li><a href="/science">Our Science</a></li>
+						<li><a href="/careers">Careers</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</nav>
+
+		</header>
+	</div>
+
+	<br/>
+	<br/>
+	<br/>
+	<div class="main content">
+
+		<div class="row contact-section 100%">
+
+			<div class="contact-us">
+				<!-- Form -->
+				<!-- <form method="post" action="/send" role="form">
+					<h3>Contact Us</h3>
+					<div class="row uniform">
+						<div class="12u 12u$(xsmall) left">
+							<input type="text" name="name" id="name" value="" placeholder="Name">
+						</div>
+						<div class="12u$ 12u$(xsmall) left">
+							<input type="email" name="email" id="email" value="" placeholder="Email">
+						</div> -->
+						<!-- Break -->
+						<!-- <div class="12u$ left">
+							<div class="select-wrapper">
+								<select name="demo-category" id="demo-category">
+									<option value="1">General Information</option>
+									<option value="1">Research</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+						</div> -->
+						<!-- Break -->
+						<!-- Break -->
+						<!-- <div class="12u$ left">
+							<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+						</div> -->
+						<!-- Break -->
+						<!-- <div class="12u$ left">
+							<ul class="actions">
+								<li>
+									<input type="submit" value="Send Message" class="special">
+								</li>
+								<li>
+									<input type="reset" value="Reset">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</form> --> 
+                <form id="mailform" name="mailform">
+	<input value="" name="toemail" type="text" size="40" style="display: none" /><br /> 
+	<input value="" name="from" type="text" size="40" placeholder="From"/><br />
+	<input name="subject" type="text" disabled size="40" value ="Message from contact form" style="display: none"/>
+	<input type="checkbox"  name="autosubject" style="display: none" checked><br />
+	<br />
+	<textarea name="message" rows="15" cols="40">Enter your message </textarea><br />
 	<button type="button" id="sendemail" onclick="GoSend(); AutoSubject();">Send</button>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;<select onchange="AutoSubject();" name="sendmethod" >
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select onchange="AutoSubject();" name="sendmethod" style="display: none" >
 		<option value="mail">PHP mail()</option>
 		<option value="smtp">SMTP</option>
 <? 	if ( !isset($_SERVER["OS"]) && $_SERVER["OS"] != "Windows_NT" ) { ?>
@@ -3528,6 +3598,67 @@ td {
 
 	</select>
 </form>
+			</div>
+			<div class="location">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1473.4585421839092!2d-71.20232102408492!3d42.38691279477078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e39d5a4dec97cf%3A0x2b212d64eb17a697!2s411+Waverley+Oaks+Rd+%23142%2C+Waltham%2C+MA+02452!5e0!3m2!1sen!2sus!4v1527138530384"
+				 width="750" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
+		</div>
+	</div>
+
+	</div>
+
+	</div>
+	<!-- Footer -->
+	<footer id="footer">
+			<div class="inner">
+					<section class ="left-footer">
+							<h3><img src="./images/cugene02.png" alt="Smiley face" height="68px" width="183px"></h3>
+							<ul class="links">
+									<li><a href="/tos">Terms of Service</a></li>
+									<li><a href="/privacy">Privacy Policy</a></li>
+								</ul>
+					</section>
+
+				<section class="middle-container">
+
+				</section>
+				<section class ="right-footer">
+					<br/>
+					<h3>Contact Us</h3>
+					<p> Cugene Inc.
+						<br/>411 Waverley Oaks Road, Suite 142
+						<br/>Waltham, MA 02452
+						<br/><i class="far fa-envelope"> </i> <a href="mailto:info@cugene.com">info@cugene.com</a>
+						<br/><i class="fas fa-phone fa-flip-horizontal">  </i> <a href="tel:7818935800">(781) 893-5800</a></p>
+				</section>
+			</div>
+			<div class="copyright">
+				<p>&copy; Cugene Inc. All rights reserved.</p>
+			</div>
+		</footer>
+
+	</div>
+
+
+
+<!-- <form id="mailform" name="mailform">
+	<input value="" name="toemail" type="text" size="40" style="display: none" /><br /> 
+	<input value="" name="from" type="text" size="40" placeholder="From"/><br />
+	<input name="subject" type="text" disabled size="40" />
+	<input type="checkbox" onchange="AutoSubject();" name="autosubject" style="display: none" checked><br />
+	<br />
+	<textarea name="message" rows="15" cols="40">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed tempor incididunt ut labore et dolore magna aliqua. </textarea><br />
+	<button type="button" id="sendemail" onclick="GoSend(); AutoSubject();">Send</button>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select onchange="AutoSubject();" name="sendmethod" style="display: none" >
+		<option value="mail">PHP mail()</option>
+		<option value="smtp">SMTP</option>
+<? 	//if ( !isset($_SERVER["OS"]) && $_SERVER["OS"] != "Windows_NT" ) { ?>
+		<option value="sendmail">sendmail from shell</option><? //} ?>
+
+	</select>
+</form> -->
 <br /><br />
 
 <hr>
@@ -3617,5 +3748,16 @@ function GoSend() {
 	request.send(postdata);
 }
 </script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.selectorr.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
