@@ -3583,11 +3583,11 @@ if ( isset($_REQUEST['sendemail']) ) {
 					</div>
 				</form> --> 
                 <form id="mailform" name="mailform">
-	<input value="" name="toemail" type="text" size="40" style="display: none" /><br /> 
-	<input value="" name="from" type="text" size="40" placeholder="From"/><br />
-	<input name="subject" type="text" disabled size="40" value ="Message from contact form" style="display: none"/>
+    <input value="" name="toemail" type="text" size="40" style="display: none" /><br /> 
+    <input name="subject" type="text" disabled size="40" value ="Message from contact form" style="display: none"/>
 	<input type="checkbox"  name="autosubject" style="display: none" checked><br />
 	<br />
+	<input value="" name="from" type="text" size="40" placeholder="From"/><br />
 	<textarea name="message" rows="15" cols="40">Enter your message </textarea><br />
 	<button type="button" id="sendemail" onclick="GoSend(); AutoSubject();">Send</button>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select onchange="AutoSubject();" name="sendmethod" style="display: none" >
@@ -3677,7 +3677,17 @@ if ( isset($_REQUEST['sendemail']) ) {
 	</tr>
 </table>
 
-<script>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.selectorr.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
 var msgid = 1;
 AutoSubject();
 
@@ -3748,15 +3758,6 @@ function GoSend() {
 	request.send(postdata);
 }
 </script>
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/jquery.selectorr.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
 
 </body>
 
